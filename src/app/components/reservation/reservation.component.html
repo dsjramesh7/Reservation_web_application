@@ -1,0 +1,110 @@
+<div style="background-color:rgb(235, 229, 229); margin-top: -20px; margin-bottom: -20px;">
+    <br>
+    <h1 class="Inspired" style="margin: 20px;">RESERVATION</h1>
+    <div style="margin-left: 40px; font-family:Helvetica;"> 
+        <h3><b>Steps:</b></h3>
+        <ul style="font-size: large;">
+            <li>Fill the below form to complete reservations process</li>
+            <li>Dinner reservation are for <b>Adults only</b></li>
+            <li>Any Query call us on <b>TOLL FREE NO. : +022-8800-7700</b></li>
+            <li>Every <b>input detail is compulsory</b> for Reservation</li>
+            <li>After filling all the details submit button will enable</li>
+        </ul>
+        <br>
+    </div>
+</div>
+<!--
+<div>
+    
+    <button (click)="myEvent('this is click')">Click Me</button>
+    <br>
+    <input type="text" class="form-control" #box (keyup)="myEvent(box.value)">
+
+    <button routerLink='/extra'>Click to go to extra</button>
+    
+    <h1>{{currentVal}}</h1>
+</div>
+-->
+
+<!-- testing activatedRoute -->
+<!--
+<div [formGroup]="form">
+    <div class="form-group">
+        <label for="name">Name :</label>
+        <input type="text" class="form-control" id="name" name="name" formControlName="name" > 
+    </div>
+    <div class="form-group">
+        <label for="email">Email :</label>
+        <input type="email" class="form-control" id="email" name="email" formControlName="email" >
+    </div>
+    <div class="form-group">
+        <label for="phone">Phone :</label>
+        <input type="number" class="form-control" id="number" name="number" formControlName="number" >
+    </div>
+
+    <button class="btn btn-secondary" [disabled]="form.invalid" (click)="saveCall()">Save</button>
+</div>
+-->
+
+
+
+
+<div style="background-color:rgb(240, 240, 240);">
+  <div [formGroup]="form"
+    style="margin:20px; margin-left: 50px; margin-right: 50px; background-color:rgb(240, 240, 240);">
+    <form class="row g-3">
+      <div class="col-md-6 form-group">
+        <label for="inputEmail4" class="form-label">Email<b class="redAsterisk">*</b></label>
+        <input type="email" class="form-control" id="inputEmail4" name="email" required placeholder="RM@mail.com"
+          formControlName="email" autofocus>
+      </div>
+      <div class="col-md-6 form-group">
+        <label for="name" class="form-label">Name<b class="redAsterisk">*</b></label>
+        <input type="text" class="form-control" id="inputPassword4" name="name" required placeholder="Rick Grimes" formControlName="name">
+      </div>
+      <div class="col-md-4 form-group">
+        <label for="phoneNo">Phone Number<b class="redAsterisk">*</b></label>
+        <input type="text" class="form-control" name="phone" required placeholder="91+ 00000 00000 Only Valid Indian Number" formControlName="phone">
+      </div>
+      <div class="col-12 form-group">
+        <label for="inputAddress" class="form-label">Address<b class="redAsterisk">*</b></label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" name="address"
+          formControlName="address">
+      </div>
+      <div class="col-md-4 form-group">
+        <label for="inputCity" class="form-label">City<b class="redAsterisk">*</b></label>
+        <input type="text" class="form-control" id="inputCity" required placeholder="Enter City Name" name="city" formControlName="city">
+      </div>
+      <div class="col-md-6 form-group ">
+        <label for="inputState" class="form-label">State<b class="redAsterisk">*</b></label>
+        <input type="text" class="form-control" name="state" required placeholder="Enter State Name" formControlName="state">
+      </div>
+      <div class="col-md-2 form-group">
+        <label for="inputZip" class="form-label">Zip<b class="redAsterisk">*</b></label>
+        <input type="text" class="form-control" id="inputZip" name="zip" formControlName="zip">
+      </div>
+      <div class="col-md-2 form-group">
+        <label for="date" class="form-label">Date<b class="redAsterisk">*</b></label>
+        <input type="date" class="form-control" name="date" formControlName="date">
+      </div>
+      <div class="col-md-2 form-group">
+        <label for="time" class="form-label">Time<b class="redAsterisk">*</b></label>
+        <input type="time" class="form-control" name="time" formControlName="time">
+      </div>
+      <div class="col-md-3  form-group">
+        <label class="form-label">Reservation For how many peoples<b class="redAsterisk">*</b></label>
+        <input type="number" class="form-control" name="reservat" formControlName="reservat"
+          placeholder="Reservation For how many peoples">
+
+      </div>
+
+
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary" [disabled]="form.invalid" (click)="saveCall()">Submit</button>
+        <button type="reset" class="btn btn-primary" style="margin-left: 10px;">Clear</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<br><br><br>
